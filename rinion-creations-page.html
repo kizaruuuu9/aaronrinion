@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rinion-creations-page.css">
+    <title>Creations</title>
+</head>
+<body>
+    <header>
+        <!-- Logo and navigation menu -->
+        <div href="#" class="logo"> AR </div>
+      
+        <nav class="buttons">
+            <a href="index.html" >Home</a>
+            <a href="about-me-page.html">About Me</a> 
+            <a href="rinion-creations-page.html"class="active">Creations</a>
+            <a href="rinion-contact-page.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Multimedia section -->
+    <h3 class="multimedias">Multimedia</h3>
+    <div class="pic-gallery">
+        <div class="pics"><img src="assets/punk-grunge.png" alt=""></div>
+        <div class="pics"><img src="assets/minimalist1.png" alt=""></div>
+        <div class="pics"><img src="assets/letterEdit.jpg" alt=""></div>
+        <div class="pics"><img src="assets/grayEdit.jpg" alt=""></div>
+    </div>
+
+    <!-- Java programming section -->
+    <h3 class="java-title">Java Programming</h3>
+    <div class="tresOsingko" style="text-align: center; margin-top: 20px;">
+        <video autoplay muted src="assets/tresOsingko.mp4"></video>
+    </div>
+
+    <!-- Figma section -->
+    <h3 class="figma-title">Figma</h3>
+    <div class="figma-video" style="text-align: center; margin-top: 20px;">
+        <video autoplay muted src="assets/figmaVid.mp4"></video>
+    </div>
+
+    <!-- Networking section -->
+    <h3 class="network">Networking</h3>
+    <div class="ciscoPics">
+        <div class="pics1"><img src="assets/cisco1.png" alt=""></div>
+        <div class="pics1"><img src="assets/cisco2.png" alt=""></div>
+        <div class="pics1"><img src="assets/cisco3.png" alt=""></div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <div class="footerContainer">
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/aaronrinion03" target="_blank"> <img src="assets/facebook.png" alt="fbPic">  </a>
+                <a href="https://www.instagram.com/r_aaronnnn/" target="_blank"> <img src="assets/instagram.png" alt="igPic"> </a>
+                <button id="gmailButton" onclick="togglePopup('emailPopup')"> <img src="assets/gmail-logo.png" alt="gmPic"> </button>
+                <button id="phoneButton" onclick="togglePopup('phonePopup')"> <img src="assets/phone-call.png" alt="pcPic"> </button>
+            </div>
+        </div>
+        
+        <!-- Copyright information -->
+        <div class="copyR"> <p> Copyright &copy; 2025: Created by <span class="designer"> Aaron Rinion </p></div>
+    </footer>
+
+    <!-- Popup containers for email and phone -->
+    <div id="emailPopup" class="popup">
+        <p>rinionaaron2@gmail.com</p>
+    </div>
+    <div id="phonePopup" class="popup">
+        <p>09685438695</p>
+    </div>
+
+    <!-- JavaScript file for popup functionality -->
+    <script src="rinion-main-page.js"></script>
+</body>
+</html>

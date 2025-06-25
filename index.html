@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header>
+    <!-- Logo and navigation menu -->
+    <div href="#" class="logo"> AR </div>
+ 
+    <nav class="buttons">
+        <a href="rinion-main-page.html" class="active">Home</a>
+        <a href="about-me-page.html">About Me</a> 
+        <a href="rinion-creations-page.html">Creations</a>
+        <a href="rinion-contact-page.html">Contact</a>
+    </nav>
+</header>
+
+<body>
+    <!-- Main content section -->
+    <section class="home">
+        <div class="left-column">
+            <!-- Profile picture -->
+            <div class="home-pic">
+                <img src="assets/profilePic.jpg" alt="dashboardPic">
+            </div>    
+    
+            <!-- Home content with introduction -->
+            <div class="home-content">
+                <h1>Hi, it's <span class="headName">Aaron</span></h1>
+                <h3 class="typing-text">I'm an IT student</h3>
+                <h4 class="p1">I study at Pamantasan ng Lungsod ng Valenzuela, I am a second-year student</h4> 
+                <div class="social-icons"></div> 
+            </div>
+        </div>
+    
+        <!-- Video section -->
+        <div class="right-column">
+            <video controls src="assets/rinionDemoReel.mp4"></video>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footerContainer">
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/aaronrinion03" target="_blank"> <img src="assets/facebook.png" alt="fbPic">  </a>
+                <a href="https://www.instagram.com/r_aaronnnn/" target="_blank"> <img src="assets/instagram.png" alt="igPic"> </a>
+                <button id="gmailButton" onclick="togglePopup('emailPopup')"> <img src="assets/gmail-logo.png" alt="gmPic"> </button>
+                <button id="phoneButton" onclick="togglePopup('phonePopup')"> <img src="assets/phone-call.png" alt="pcPic"> </button>
+            </div>    
+        </div>
+        
+        <!-- Copyright information -->
+        <div class="copyR"> <p> Copyright &copy; 2025: Created by <span class="designer"> Aaron Rinion </p></div>
+    </footer>
+
+    <!-- Popup containers for email and phone -->
+    <div id="emailPopup" class="popup">
+        <p>rinionaaron2@gmail.com</p>
+    </div>
+    <div id="phonePopup" class="popup">
+        <p>09685438695</p>
+    </div>
+
+    <!-- JavaScript file for popup functionality -->
+    <script src="rinion-main-page.js"></script>
+</body>
+</html>

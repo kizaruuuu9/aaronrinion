@@ -1,0 +1,425 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* Set base font size */
+html {
+    font-size: 62.5%;
+}
+
+/* Body styles */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #BAD8B6;
+    color: white;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 9%;
+    background-color: #E1EACD;
+    box-shadow: 0px 4px 10px #aaa9a9;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: Sans-serif;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* Paragraph styles */
+.p1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 80px;
+    color: #8D77AB;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation link styles */
+nav a {
+    font-size: 20px;
+    color: #8D77AB;
+    margin-left: 45px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8D77AB;
+    border-bottom: 3px solid #8D77AB;
+}
+
+/* Popup container styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9F6E6;
+    padding: 40px;
+    border: 2px solid #8D77AB;
+    border-radius: 10px;
+    z-index: 1001;
+    color: black;
+    font-size: 24px;
+}
+
+/* Picture gallery styles */
+.pic-gallery {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Multimedia section styles */
+.multimedias {
+    font-family: monospace;
+    font-size: 24px;
+    color: #8D77AB;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Java title styles */
+.java-title {
+    font-family: monospace;
+    font-size: 24px;
+    color: #8D77AB;
+    text-align: center;
+    margin-bottom: -30px;
+    margin-top: 100px;
+}
+
+/* Network section styles */
+.network {
+    font-family: monospace;
+    font-size: 24px;
+    color: #8D77AB;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Picture styles */
+.pics {
+    position: relative;
+    margin: -40px;
+    z-index: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pics img {
+    width: 240px;
+    height: 340px;
+    box-shadow: #E1EACD 0px 0px 10px;
+    border: 5px solid #D3D3D3;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for pictures */
+.pics:hover {
+    transform: scale(1.1); /* Scale up the picture */
+    z-index: 2; /* Bring the picture to the front */
+}
+
+.pics:hover img {
+    box-shadow: #ffffff 0px 0px 20px; /* Add a white glow effect */
+}
+
+/* TresOsingko section styles */
+.tresOsingko {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.tresOsingko video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Figma title styles */
+.figma-title {
+    font-family: monospace;
+    font-size: 24px;
+    color: #8D77AB;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+
+/* Figma video styles */
+.figma-video {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.figma-video video {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cisco pictures section styles */
+.ciscoPics {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+/* Cisco picture styles */
+.pics1 {
+    position: relative;
+    margin: 20px 0;
+    z-index: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pics1 img {
+    width: 240px;
+    height: 340px;
+    box-shadow: #E1EACD 0px 0px 10px;
+    border: 5px solid #D3D3D3;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for Cisco pictures */
+.pics1:hover {
+    transform: scale(1.1); /* Scale up the picture */
+    z-index: 2; /* Bring the picture to the front */
+}
+
+.pics1:hover img {
+    box-shadow: #ffffff 0px 0px 20px; /* Add a white glow effect */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #E1EACD;
+        border-top: 2px solid #8D77AB;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .pic-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .pics {
+        margin: 100px 0;
+    }
+
+    .multimedias {
+        margin: 200px 0;
+        margin-bottom: -110px;
+    }
+
+    .pics img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tresOsingko {
+        padding: 15px;
+    }
+
+    .tresOsingko video {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    .figma-video {
+        padding: 15px;
+    }
+
+    .figma-video video {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .ciscoPics {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .pics1 {
+        margin: 20px 0;
+    }
+
+    .pics1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #F9F6E6;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a,
+.social-icons button {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #F9F6E6;
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.social-icons a img,
+.social-icons button img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+/* Social icons hover effect */
+.social-icons a:hover {
+    background-color: #8D77AB;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.social-icons :hover {
+    background-color: #8D77AB;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+/* Copyright section styles */
+.copyR {
+    background-color: #8D77AB;
+    text-align: center;
+    padding: 25px;
+    font: helvetica;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+/* Designer text styles */
+.designer {
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+

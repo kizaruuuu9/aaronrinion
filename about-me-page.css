@@ -1,0 +1,357 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* Set base font size */
+html {
+    font-size: 62.5%;
+}
+
+/* Body styles */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #BAD8B6;
+    color: white;
+}
+
+/* Section styles */
+section {
+    flex: 1;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 9%;
+    background-color: #E1EACD;
+    box-shadow: 0px 4px 10px #aaa9a9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 80px;
+    color: #8D77AB;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation link styles */
+nav a {
+    font-size: 20px;
+    color: #8D77AB;
+    margin-left: 45px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active2 {
+    color: #8D77AB;
+    border-bottom: 3px solid #8D77AB;
+}
+
+/* Headline styles */
+.headLine {
+    font-family: monospace;
+    color: #6c43a5;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+/* Content section styles */
+.content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8D77AB;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8D77AB;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.content {
+    font-family: monospace;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+    padding-top: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.content div {
+    width: 100%;
+    text-align: center;
+}
+
+/* Image styles */
+.image1 {
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+    margin-right: 320px;
+}
+
+.image1 img {
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.image2 {
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-left: 320px;
+}
+
+.image2 img {
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9F6E6;
+    padding: 40px;
+    border: 2px solid #8D77AB;
+    border-radius: 10px;
+    z-index: 1001;
+    color: black;
+    font-size: 24px;
+}
+
+/* Responsive styles for medium screens */
+@media (max-width: 1024px) {
+    header {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .image1,
+    .image2 {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .image1 img,
+    .image2 img {
+        width: 80%;
+        height: auto;
+    }
+
+    .footerContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #E1EACD;
+        border-top: 2px solid #8D77AB;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .headLine {
+        margin: 200px auto;
+    }
+
+    .image1,
+    .image2 {
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    .image1 img,
+    .image2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+
+    .footerContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #F9F6E6;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a,
+.social-icons button {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #F9F6E6;
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.social-icons a img,
+.social-icons button img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+/* Social icons hover effect */
+.social-icons a:hover {
+    background-color: #8D77AB;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.social-icons :hover {
+    background-color: #8D77AB;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+/* Copyright section styles */
+.copyR {
+    background-color: #8D77AB;
+    text-align: center;
+    padding: 25px;
+    font: helvetica;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+/* Designer text styles */
+.designer {
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+
+
